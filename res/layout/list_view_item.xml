@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants" >
+    <!-- 必须设置上面的android:descendantFocusability="blocksDescendants"
+    	 否则item点击事件无效
+    -->
+    
+    <Button 
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点我!"/>
+    
+    <TextView 
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"/>
+    
+    <ProgressBar 
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"/>
+
+</LinearLayout>
